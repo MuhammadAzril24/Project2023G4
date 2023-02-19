@@ -1,3 +1,8 @@
+<!---------header------------>
+<?php
+  include_once 'header.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,3 +42,7 @@
       </section>
 </body>
 </html>
+<!-------------footer------------>
+<?php
+  include_once 'footer.php';
+?>
