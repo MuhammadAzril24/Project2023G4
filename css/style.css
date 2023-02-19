@@ -118,6 +118,13 @@ section{
 	grid-gap: 1.5rem;
 	align-items: center;
 }
+.aboutus{
+	display: grid;
+}
+.aboutus h1{
+	font-size: var(--big-font);
+	color: var(--main-color);
+}
 .about-img img{
 	max-width: 100%;
 	width: 300px;
@@ -254,5 +261,6 @@ section{
 	}
 	.details-sub h5{
 		text-align: center;
+
 	}
 }
