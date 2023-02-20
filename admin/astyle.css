@@ -39,11 +39,7 @@ justify-content: space-between;
 align-items: center;
 }
 
-.logo {
-font-size: 27px;
-font-weight: 600;
-color: rgb(47, 141, 70);
-}
+.logo {font-size: 27px;font-weight: 600;color: rgb(255 112 42);}
 
 .icn {
 height: 30px;
@@ -229,25 +225,15 @@ transition: transform 0.3s ease-in-out;
 transform: scale(1.08);
 }
 
-.box:nth-child(1) {
-background-color: var(--one-use-color);
-}
-.box:nth-child(2) {
-background-color: var(--two-use-color);
-}
-.box:nth-child(3) {
-background-color: var(--one-use-color);
-}
-.box:nth-child(4) {
-background-color: var(--two-use-color);
-}
+.box:nth-child(1) {background-color: #fafaff;}
+.box:nth-child(2) {background-color: #fafaff;}
+.box:nth-child(3) {background-color: #fafaff;}
+.box:nth-child(4) {background-color: #fafaff;}
 
 .box img {
 height: 50px;
 }
-.box .text {
-color: white;
-}
+.box .text {color: rgb(0 0 50);}
 .topic {
 font-size: 13px;
 font-weight: 400;
@@ -278,22 +264,9 @@ padding: 20px 20px 10px 20px;
 border-bottom: 2px solid rgba(0, 20, 151, 0.59);
 }
 
-.recent-Articles {
-font-size: 30px;
-font-weight: 600;
-color: #5500cb;
-}
+.recent-Articles {font-size: 30px;font-weight: 600;color: #ff702a;}
 
-.view {
-height: 35px;
-width: 90px;
-border-radius: 8px;
-background-color: #5500cb;
-color: white;
-font-size: 15px;
-border: none;
-cursor: pointer;
-}
+.view {height: 35px;width: 90px;border-radius: 8px;background-color: #5500cb;color: white;font-size: 15px;border: none;cursor: pointer;}
 
 .report-body {
 max-width: 1160px;
