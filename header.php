@@ -1,6 +1,6 @@
 <!-------------header------------>
 <?php
-  include_once 'footer.php';
+  include_once 'header.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,19 +19,14 @@
 	</head>
 	<body>
 		<header>
-			<a href="#" class="logo">Foods</a>
+			<a href="index.php" class="logo">Foods</a>
 			<div class="bx bx-menu" id="menu-icon"></div>
 
 			<ul class="navbar">
-				<li><a href="#home">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="about.php">About Us</a></li>
 				<li><a href="menu.php">Menu</a></li>
 				<li><a href="#location">Location</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</header>
-
-<!-------------footer------------>
-<?php
-  include_once 'footer.php';
-?>

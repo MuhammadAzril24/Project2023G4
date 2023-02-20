@@ -8,5 +8,5 @@ session_start();
 unset($_SESSION["name"]);
 
 //Once the session has be disconnected/unregistered the user is sent back to the login.html page
-header("Location:login.html");
+header("Location:validate.php");
 ?>

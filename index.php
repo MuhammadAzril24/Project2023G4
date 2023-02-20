@@ -6,7 +6,7 @@ include_once 'header.php';
 			<div class="home-text">
 				<h1>Meathos</h1>
 				<h2>Food The <br> Most Precious Things</h2>
-				<a href="menu.html" class="btn">Today's Menu</a>
+				<a href="menu.php" class="btn">Today's Menu</a>
 			</div>
 
 			<div class="home-img">
@@ -58,5 +58,5 @@ include_once 'header.php';
 
 		<!----------Footer Start--------->
 <?php
-	include_once 'header.php';
+	include_once 'footer.php';
 ?>

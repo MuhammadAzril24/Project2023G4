@@ -6,7 +6,7 @@
 						<h4>Menu Links</h4>
 						<ul>
 							<li><a href="#home">Home</a></li>
-							<li><a href="#about">about</a></li>
+							<li><a href="#about.php">about</a></li>
 							<li><a href="menu.html">Menu</a></li>
 							<li><a href="#location">Location</a></li>
 							<li><a href="#contact">Contact</a></li>
