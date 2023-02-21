@@ -4,7 +4,7 @@ $conn = "";
 
 try {
 	$servername = "localhost:3306";
-	$dbname = "MFOOS";
+	$dbname = "g04_73n";
 	$username = "root";
 	$password = "";
 

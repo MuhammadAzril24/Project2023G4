@@ -18,17 +18,18 @@
 
 			<div class="textbox">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" name="username" placeholder="Username" required>
+				<input type="text" placeholder="Username"
+						name="username" value="">
 			</div>
 
 			<div class="textbox">
 				<i class="fa fa-lock" aria-hidden="true"></i>
-				<input type="password" name="password" placeholder="Password" required>
+				<input type="password" placeholder="Password"
+						name="password" value="">
 			</div>
-				<a href="forgot-password.php">Forgotten password?</a>
 
 			<input class="button" type="submit"
-					name="login" value="Log In">
+					name="login" value="Sign In">
 		</div>
 	</form>
 </body>

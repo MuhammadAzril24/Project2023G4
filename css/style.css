@@ -42,11 +42,21 @@ header{
 	font-size: 35px;
 	color: var(--main-color);
 }
-.heading h1{
+.home-text h1{
 	font-size: 30px;
 	font-weight: 400;
 	letter-spacing: 10px;
 	margin-bottom: 10px;
+	text-align: center;
+}
+.location-text h1{
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.about-text p{
 	text-align: center;
 }
 .heading h3{
@@ -117,13 +127,6 @@ section{
 	grid-template-columns: repeat(2, 2fr);
 	grid-gap: 1.5rem;
 	align-items: center;
-}
-.aboutus{
-	display: grid;
-}
-.aboutus h1{
-	font-size: var(--big-font);
-	color: var(--main-color);
 }
 .about-img img{
 	max-width: 100%;
