@@ -22,15 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		
 		if(($user["Username"] == $username) &&
 			($user['Password'] == $password)) {
-				header("location: adminpage.php");
+				header("location: dashboard.php");
 		}
 		else {
-			echo "<script language='javascript'>";
-			echo "alert('WRONG INFORMATION')";
-			echo "</script>";
-			die();
+			echo "<div class='login-box'>
+			<h3>Username/password is incorrect.</h3>
+			<br/>Click here to <a href='index.php'>Login</a></div>";
+				}
 		}
-	}
 }
 
 ?>

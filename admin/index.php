@@ -9,7 +9,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="login.css">
 	<title>Login Page</title>
-      
 </head>
 
 <body>
@@ -19,19 +18,17 @@
 
 			<div class="textbox">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" placeholder="Username"
-						name="username" value="">
+				<input type="text" name="username" placeholder="Username" required>
 			</div>
 
 			<div class="textbox">
 				<i class="fa fa-lock" aria-hidden="true"></i>
-				<input type="password" placeholder="Password"
-						name="password" value="">
+				<input type="password" name="password" placeholder="Password" required>
 			</div>
+				<a href="forgot.php">Forgotten password?</a>
 
 			<input class="button" type="submit"
-					name="login" value="Sign In">
-                 <span class="psw">Forgot <a href="forgot.html">password?</a></span>
+					name="login" value="Log In">
 		</div>
 	</form>
 </body>
