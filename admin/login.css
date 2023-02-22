@@ -6,10 +6,6 @@ body {
 	background-size: cover;
 }
 
-h3 a:-webkit-any-link {
-    text-decoration:none;
-}
-
 .login-box {
 	width: 280px;
 	position: absolute;

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eee;
+    background-image: radial-gradient(at 61% 4%, #eee 0px, transparent 50%),
+        radial-gradient(at 75% 66%, #eee 0px, transparent 50%),
+        radial-gradient(at 98% 88%, hsl(76deg 13% 94%) 0px, transparent 50%),
+        radial-gradient(at 23% 16%, hsl(238deg 22% 93%) 0px, transparent 50%),
+        radial-gradient(at 95% 65%, hsl(13deg 34% 95%) 0px, transparent 50%),
+        radial-gradient(at 10% 79%, hsl(228deg 17% 97%) 0px, transparent 50%),
+        radial-gradient(at 85% 58%, hsl(328deg 27% 97%) 0px, transparent 50%);
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem 0;
+}
+
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.lock-icon {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 12px;
+}
+
+.passInput {
+    margin-top: 15px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #0012ff;
+    font-size: 15px;
+    color: white;
+    outline: none;
+}
+
+button {
+    margin-top: 15px;
+    width: 80%;
+    background-color: #0012ff;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}

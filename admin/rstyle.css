@@ -126,9 +126,6 @@
 .recent-Articles {
 	font-size: 12px;
 }
-h3 a:-webkit-any-link {
-    text-decoration:none;
-}
 .view {
 	width: 50px;
 	font-size: 8px;
