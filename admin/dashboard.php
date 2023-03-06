@@ -48,7 +48,7 @@
 				alt="">
 			<div class="dp">
 			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+"image/profile-picture.png"
 					class="dpicn"
 					alt="dp">
 			</div>

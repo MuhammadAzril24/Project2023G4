@@ -337,6 +337,7 @@ a>code {
 }
 
 .container {
+  align-items: center;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -377,6 +378,7 @@ a>code {
 }
 
 .row {
+  align-items: center;
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
