@@ -19,8 +19,10 @@
   <title>TOMOHAWK</title>
   <style>
     .container {
-      position: relative;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .header {
       position: absolute;
@@ -46,13 +48,38 @@
       font-weight: bold;
       margin-top: 20px;
     }
+    #cart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+    }
+
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">TOMOHAWK</div>
-  <img src="image/tomohawk.png" alt="Image">
-  <p></p>
+    <div class="header">
+      <a href="#cart"></a>
+    </div>
+    <img src="image/tomohawk.png" alt="Image">
+    <p></p>
+    <section id="menu">
+      <div class="menu">
+        <div class="heading">
+          </div>
+        <ul>
+          <li>
+            <h2>TOMOHAWK</h2>
+            <p>Description of Item 1</p>
+            <p>Price: $10.00</p>
+            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+          </li>
+          <li>
+        </ul>
+      </div>
+    </section>
 </body>
 </html>
 
@@ -63,8 +90,10 @@
   <title>steak</title>
   <style>
     .container {
-      position: relative;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .header {
       position: absolute;
@@ -85,18 +114,42 @@
       height: 185px;
     }
     p {
-      text-align: center;
+      text-align: left;
       font-size: 24px;
       font-weight: bold;
       margin-top: 20px;
+    }
+    #cart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">STEAK</div>
-  <img src="image/steak.png" alt="Image">
-  <p></p>
+    <div class="header">
+      <a href="#cart"></a>
+    </div>
+    <img src="image/steak.png" alt="Image">
+    <p></p>
+    <section id="menu">
+      <div class="menu">
+        <div class="heading">
+          </div>
+        <ul>
+          <li>
+            <h2>STEAK</h2>
+            <p>Description of Item 1</p>
+            <p>Price: $10.00</p>
+            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+          </li>
+          <li>
+        </ul>
+      </div>
+    </section>
 </body>
 </html>
 
@@ -107,8 +160,10 @@
   <title>Set Platter</title>
   <style>
     .container {
-      position: relative;
-      text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
     .header {
       position: absolute;
@@ -129,20 +184,45 @@
       height: 185px;
     }
     p {
-      text-align: center;
+      text-align: left;
       font-size: 24px;
       font-weight: bold;
       margin-top: 20px;
+    }
+    #cart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">PLATTER</div>
-  <img src="image/set platter.png" alt="Image">
-  <p></p>
+    <div class="header">
+      <a href="#cart"></a>
+    </div>
+    <img src="image/set platter.png" alt="Image">
+    <p></p>
+    <section id="menu">
+      <div class="menu">
+        <div class="heading">
+          </div>
+        <ul>
+          <li>
+            <h2>SET PLATTER</h2>
+            <p>Description of Item 1</p>
+            <p>Price: $10.00</p>
+            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+          </li>
+          <li>
+        </ul>
+      </div>
+    </section>
 </body>
 </html>
+
 
 
 <!DOCTYPE html>
@@ -150,9 +230,11 @@
 <head>
   <title>Burger</title>
   <style>
-     .container {
-      position: relative;
-      text-align: center;
+      .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .header {
       position: absolute;
@@ -173,23 +255,44 @@
       height: 185px;
     }
     p {
-      text-align: center;
+      text-align: left;
       font-size: 24px;
       font-weight: bold;
       margin-top: 20px;
+    }
+    #cart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">BURGER</div>
-  <img src="image/burger.png" alt="Image">
-  <p></p>
+    <div class="header">
+      <a href="#cart"></a>
+    </div>
+    <img src="image/burger.png" alt="Image">
+    <p></p>
+    <section id="menu">
+      <div class="menu">
+        <div class="heading">
+          </div>
+        <ul>
+          <li>
+            <h2>BURGER</h2>
+            <p>Description of Item 1</p>
+            <p>Price: $10.00</p>
+            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+          </li>
+          <li>
+        </ul>
+      </div>
+    </section>
 </body>
-</html>
-
-
-
+</html>  
 
 
 
