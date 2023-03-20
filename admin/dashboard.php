@@ -10,9 +10,9 @@
 				initial-scale=1.0">
 	<title>Meathos Restaurant</title>
 	<link rel="stylesheet"
-		href="astyle.css">
+		href="style/astyle.css">
 	<link rel="stylesheet"
-		href="rstyle.css">
+		href="style/rstyle.css">
 </head>
 
 <body>
@@ -40,17 +40,18 @@
 			</div>
 		</div>
 
-		<div class="message">
-			<div class="circle"></div>
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
-				class="icn"
-				alt="">
-			<div class="dp">
-			<img src=
-"image/profile-picture.png"
-					class="dpicn"
-					alt="dp">
+		<div class="profile_info">
+			<img src="profile-picture.png" alt="">
+			<div class="profile_info_iner">
+				
+				<div class="profile_admin_name">
+					<p>ADMIN</p>
+					<h5>Muhammad Syahmi Saleh</h5>
+					<div class="profile_info_details">
+						<a href="#">My Profile</a>
+						<a href="#">Settings</a>
+						<a href="#">Logout</a>
+				</div>
 			</div>
 		</div>
 
