@@ -61,7 +61,7 @@
  
  <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
     <div class="logo d-flex justify-content-between">
-        <a href="index.html"><img src="img/logo.png" alt></a>
+        <a href="dashboard.php"><img src="img/logo.png" alt></a>
         <div class="sidebar_close_icon d-lg-none">
             <i class="ti-close"></i>
         </div>
@@ -75,9 +75,9 @@
             <span>Dashboard</span>
           </a>
           <ul>
-            <li><a class="active" href="index.html">Sales</a></li>
-            <li><a href="index_2.html">Default</a></li>
-            <li><a href="index_3.html">Dark Menu</a></li>
+            <li><a class="active" href="demo.php">Sales</a></li>
+            <li><a href="index2.php">Default</a></li>
+            <li><a href="index3.php">Dark Menu</a></li>
           </ul>
         </li>
         <li class>

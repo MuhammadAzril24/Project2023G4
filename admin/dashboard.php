@@ -200,63 +200,63 @@
 							<h3 class="t-op-nextlvl">Order 73</h3>
 							<h3 class="t-op-nextlvl">2</h3>
 							<h3 class="t-op-nextlvl">210</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
 							<h3 class="t-op-nextlvl">Order 72</h3>
 							<h3 class="t-op-nextlvl">1</h3>
 							<h3 class="t-op-nextlvl">360</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
 							<h3 class="t-op-nextlvl">Order 71</h3>
 							<h3 class="t-op-nextlvl">3</h3>
 							<h3 class="t-op-nextlvl">150</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
 							<h3 class="t-op-nextlvl">Order 70</h3>
 							<h3 class="t-op-nextlvl">4</h3>
 							<h3 class="t-op-nextlvl">420</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
 							<h3 class="t-op-nextlvl">Order 69</h3>
 							<h3 class="t-op-nextlvl">5</h3>
 							<h3 class="t-op-nextlvl">190</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
-							<h3 class="t-op-nextlvl">Article 68</h3>
+							<h3 class="t-op-nextlvl">Order 68</h3>
 							<h3 class="t-op-nextlvl">1.9k</h3>
 							<h3 class="t-op-nextlvl">390</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
-							<h3 class="t-op-nextlvl">Article 67</h3>
+							<h3 class="t-op-nextlvl">Order 67</h3>
 							<h3 class="t-op-nextlvl">1.2k</h3>
 							<h3 class="t-op-nextlvl">580</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
-							<h3 class="t-op-nextlvl">Article 66</h3>
+							<h3 class="t-op-nextlvl">Order 66</h3>
 							<h3 class="t-op-nextlvl">3.6k</h3>
 							<h3 class="t-op-nextlvl">160</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 						<div class="item1">
-							<h3 class="t-op-nextlvl">Article 65</h3>
+							<h3 class="t-op-nextlvl">Order 65</h3>
 							<h3 class="t-op-nextlvl">1.3k</h3>
 							<h3 class="t-op-nextlvl">220</h3>
-							<h3 class="t-op-nextlvl lavel-tag">Published</h3>
+							<h3 class="t-op-nextlvl lavel-tag">Complete</h3>
 						</div>
 
 					</div>

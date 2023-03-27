@@ -1,3 +1,4 @@
+<?php include_once "controller.php"; ?>
 <!doctype html>
 <html lang="en">
 
@@ -17,16 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/fstyle.css">
 
-    <title>Forgot Password UI Using CSS - @code.scientist x @codingtorque</title>
+    <title>Forgot Password</title>
 </head>
 
 <body>
     <div class="card">
        
         <h2>Forgot Password?</h2>
-        <p>You can reset your Password here</p>
+        <p>Enter Your Email Address</p>
         <input type="text" class="passInput" placeholder="Email address">
-        <button>Send My Password</button>
+        <button type="submit" name="check-email">Continue</button>
     </div>
 </body>
 

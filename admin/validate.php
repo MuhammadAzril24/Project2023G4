@@ -12,8 +12,8 @@ function test_input($data) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
-	$username = test_input($_POST["username"]);
-	$password = test_input($_POST["password"]);
+	$username = test_input($_POST["Username"]);
+	$password = test_input($_POST["Password"]);
 	$stmt = $conn->prepare("SELECT * FROM adminlogin");
 	$stmt->execute();
 	$users = $stmt->fetchAll();
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	foreach($users as $user) {
 		
 		if(($user["Username"] == $username) &&
-			($user['Password'] == $password)) {
+			($user["Password"] == $password)) {
 				header("location: dashboard.php");
 		}
 		else {

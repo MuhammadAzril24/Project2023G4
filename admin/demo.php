@@ -76,64 +76,13 @@
             <li><a href="index3.php">Dark Menu</a></li>
           </ul>
         </li>
-        <li class>
-          <a class="has-arrow" href="#" aria-expanded="false">
-            
-            <div class="icon_menu">
-                <img src="img/menu-icon/3.svg" alt>
-            </div>
-            <span>UI Kits</span>
-          </a>
-          <ul>
-            <li><a href="colors.html">colors</a></li>
-            <li><a href="Alerts.html">Alerts</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="modal.html">modal</a></li>
-            <li><a href="dropdown.html">Droopdowns</a></li>
-            <li><a href="Badges.html">Badges</a></li>
-            <li><a href="Loading_Indicators.html">Loading Indicators</a></li>
-            <li><a href="State_color.html">State color</a></li>
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="datepicker.html">Date Picker</a></li>
-          </ul>
-        </li>
-        <li class>
-          <a class="has-arrow" href="#" aria-expanded="false">
-            
-            <div class="icon_menu">
-                <img src="img/menu-icon/4.svg" alt>
-            </div>
-            <span>forms</span>
-          </a>
-          <ul>
-            <li><a href="Basic_Elements.html">Basic Elements</a></li>
-            <li><a href="Groups.html">Groups</a></li>
-            <li><a href="Max_Length.html">Max Length</a></li>
-            <li><a href="Layouts.html">Layouts</a></li>
-          </ul>
-        </li>
-        <li class>
-            <a href="Board.html" aria-expanded="false">
-              <div class="icon_menu">
-                  <img src="img/menu-icon/5.svg" alt>
-              </div>
-              <span>Board</span>
-            </a>
-        </li>
+        
         <li class>
             <a href="invoice.html" aria-expanded="false">
               <div class="icon_menu">
                   <img src="img/menu-icon/6.svg" alt>
               </div>
-              <span>Invoice</span>
-            </a>
-        </li>
-        <li class>
-            <a href="calender.html" aria-expanded="false">
-              <div class="icon_menu">
-                  <img src="img/menu-icon/7.svg" alt>
-              </div>
-              <span>Calander</span>
+              <span>Feedback</span>
             </a>
         </li>
         
@@ -808,71 +757,6 @@
                             <div class="default-datepicker">
                                 <div class="datepicker-here" data-language="en"></div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="white_card card_height_100  mb_20">
-                        <div class="white_card_header">
-                            <div class="box_header m-0">
-                                <div class="main-title">
-                                    <h3 class="m-0">Top Global Sales</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="white_card_body pb-0">
-                            <div id="world-map-markers" class="dashboard_w_map"></div>
-                            <div class="row justify-content-center mt_30">
-                                <div class="col-lg-9">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="single_progressbar">
-                                                <h6 class="f_s_14 f_w_400">USA</h6>
-                                                <div id="bar4" class="barfiller">
-                                                    <div class="tipWrap">
-                                                        <span class="tip"></span>
-                                                    </div>
-                                                    <span class="fill" data-percentage="81"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="single_progressbar">
-                                                <h6>Australia</h6>
-                                                <div id="bar5" class="barfiller">
-                                                    <div class="tipWrap">
-                                                        <span class="tip"></span>
-                                                    </div>
-                                                    <span class="fill" data-percentage="58"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="single_progressbar">
-                                                <h6>Brazil</h6>
-                                                <div id="bar6" class="barfiller">
-                                                    <div class="tipWrap">
-                                                        <span class="tip"></span>
-                                                    </div>
-                                                    <span class="fill" data-percentage="42"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="single_progressbar">
-                                                <h6>Latvia</h6>
-                                                <div id="bar7" class="barfiller">
-                                                    <div class="tipWrap">
-                                                        <span class="tip"></span>
-                                                    </div>
-                                                    <span class="fill" data-percentage="55"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
