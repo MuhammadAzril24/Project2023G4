@@ -13,7 +13,7 @@
       </div>
       </section>
 
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>TOMOHAWK</title>
@@ -55,39 +55,30 @@
       align-items: center;
       padding: 50px 0;
     }
-
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <a href="#cart"></a>
+      <a href="#cart">Cart</a>
     </div>
     <img src="image/tomohawk.png" alt="Image">
     <p></p>
     <section id="menu">
       <div class="menu">
         <div class="heading">
-          </div>
+        </div>
         <ul>
           <li>
             <h2>TOMOHAWK</h2>
-            <p>Description of Item 1</p>
-            <p>Price: $10.00</p>
-            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+            <p>The tomahawk steak is essentially a ribeye beef steak specifically cut with at least five inches of rib bone left intact. The extra-long, french trimmed bone utilizes the same culinary technique that shapes a rack of lamb. “Frenching” means trimming the bone of meat and fat to the point where it looks like a handle.</p>
+            <p>Price:$380.00</p>
+            <button class="add-to-cart" data-price="380.00">Add to Cart</button>
           </li>
-          <li>
-        </ul>
-      </div>
-    </section>
-</body>
-</html>
-
-
-<!DOCTYPE html>
+          <!DOCTYPE html>
 <html>
 <head>
-  <title>steak</title>
+  <title>Steak</title>
   <style>
     .container {
       display: flex;
@@ -133,37 +124,29 @@
     <div class="header">
       <a href="#cart"></a>
     </div>
-    <img src="image/steak.png" alt="Image">
+    <img src="image/Steak.png" alt="Image">
     <p></p>
     <section id="menu">
       <div class="menu">
         <div class="heading">
-          </div>
+        </div>
         <ul>
           <li>
             <h2>STEAK</h2>
-            <p>Description of Item 1</p>
-            <p>Price: $10.00</p>
-            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+            <p>A good steak is juicy, tender, loaded with flavor, and has a minimum amount of fat. Lean is the cherry-red part of the meat. The fat is the white part of the meat. Fat is a waste item on a steak.</p>
+            <p>Price: $85.00</p>
+            <button class="add-to-cart" data-price="85.00">Add to Cart</button>
           </li>
-          <li>
-        </ul>
-      </div>
-    </section>
-</body>
-</html>
-
-
-<!DOCTYPE html>
+          <!DOCTYPE html>
 <html>
 <head>
   <title>Set Platter</title>
   <style>
     .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .header {
       position: absolute;
@@ -203,34 +186,25 @@
     <div class="header">
       <a href="#cart"></a>
     </div>
-    <img src="image/set platter.png" alt="Image">
+    <img src="image/Set platter.png" alt="Image">
     <p></p>
     <section id="menu">
       <div class="menu">
         <div class="heading">
-          </div>
+        </div>
         <ul>
           <li>
             <h2>SET PLATTER</h2>
-            <p>Description of Item 1</p>
-            <p>Price: $10.00</p>
-            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+            <p>It is marbled, moist, and has an intense flavor thanks to its intact rib bone. The cut is a bone-in ribeye steak from the front rib of the beef. The thickness of the cut depends on the thickness of the bone. A tomahawk steak is normally so big that it can easily feed at least two people</p>
+            <p>Price: $85.00</p>
+            <button class="add-to-cart" data-price="85.00">Add to Cart</button>
           </li>
-          <li>
-        </ul>
-      </div>
-    </section>
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
+          <!DOCTYPE html>
 <html>
 <head>
   <title>Burger</title>
   <style>
-      .container {
+    .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -279,21 +253,156 @@
     <section id="menu">
       <div class="menu">
         <div class="heading">
-          </div>
+        </div>
         <ul>
           <li>
             <h2>BURGER</h2>
-            <p>Description of Item 1</p>
-            <p>Price: $10.00</p>
-            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+            <p>American Wagyu beef is from cattle that are cross bred with Japanese Wagyu cattle – known for their superior marbling and buttery tenderness. It's exactly the kind of unique backstory diners gravitate towards when they see it on a menu.</p>
+            <p>Price: $35.00</p>
+            <button class="add-to-cart" data-price="35.00">Add to Cart</button>
           </li>
-          <li>
+          <!-- Add more items here -->
         </ul>
       </div>
     </section>
-</body>
-</html>  
+    <section id="cart"></section>
+    <script>
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      const cartItems = [];
 
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const price = parseFloat(button.dataset.price);
+          cartItems.push({price});
+          updateCart();
+        });
+      });
+
+      function updateCart() {
+        const cart = document.querySelector('#cart');
+        const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+        cart.innerHTML = `<h2>Cart</h2>
+                          <ul>
+                            ${cartItems.map(item => `<li>$${item.price.toFixed(2)}</li>`).join('')}
+                          </ul>
+                          <p>Total: $${total.toFixed(2)}</p>`;
+      }
+    </script>
+  </div>
+</body>
+</html>
+
+        </ul>
+      </div>
+    </section>
+    <section id="cart"></section>
+    <script>
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      const cartItems = [];
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const price = parseFloat(button.dataset.price);
+          cartItems.push({price});
+          updateCart();
+        });
+      });
+
+      function updateCart() {
+        const cart = document.querySelector('#cart');
+        const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+        cart.innerHTML = `<h2>Cart</h2>
+                          <ul>
+                            ${cartItems.map(item => `<li>$${item.price.toFixed(2)}</li>`).join('')}
+                          </ul>
+                          <p>Total: $${total.toFixed(2)}</p>`;
+      }
+    </script>
+  </div>
+</body>
+</html>
+
+        </ul>
+      </div>
+    </section>
+    <section id="cart"></section>
+    <script>
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      const cartItems = [];
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const price = parseFloat(button.dataset.price);
+          cartItems.push({price});
+          updateCart();
+        });
+      });
+
+      function updateCart() {
+        const cart = document.querySelector('#cart');
+        const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+        cart.innerHTML = `<h2>Cart</h2>
+                          <ul>
+                            ${cartItems.map(item => `<li>$${item.price.toFixed(2)}</li>`).join('')}
+                          </ul>
+                          <p>Total: $${total.toFixed(2)}</p>`;
+      }
+    </script>
+  </div>
+</body>
+</html>
+        </ul>
+      </div>
+    </section>
+    <section id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button id="checkout-button">Checkout</button>
+    </section>
+    <section id="checkout" style="display:none">
+      <h2>Checkout</h2>
+      <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <button type="submit" id="submit-button">Submit Order</button>
+      </form>
+    </section>
+    <script>
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      const cartItems = [];
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const price = parseFloat(button.dataset.price);
+          cartItems.push({price});
+          updateCart();
+        });
+      });
+
+      function updateCart() {
+        const cart = document.querySelector('#cart');
+        const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+        const cartList = document.querySelector('#cart-items');
+        cartList.innerHTML = cartItems.map(item => `<li>$${item.price.toFixed(2)}</li>`).join('');
+        document.querySelector('#cart-total').textContent = total.toFixed(2);
+        if (cartItems.length > 0) {
+          document.querySelector('#checkout-button').style.display = 'block';
+        }
+      }
+
+      document.querySelector('#checkout-button').addEventListener('click', () => {
+        document.querySelector('#cart').style.display = 'none';
+        document.querySelector('#checkout').style.display = 'block';
+      });
+    </script>
+  </div>
+</body>
+</html>
 
 
 
