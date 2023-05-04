@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2023 at 06:09 AM
+-- Generation Time: May 04, 2023 at 06:16 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -104,17 +104,6 @@ CREATE TABLE `tblfoodtracking` (
   `OrderCanclledByUser` int(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tblfoodtracking`
---
-
-INSERT INTO `tblfoodtracking` (`ID`, `OrderId`, `remark`, `status`, `StatusDate`, `OrderCanclledByUser`) VALUES
-(6, '449024809', 'Order Confirmed', 'Order Confirmed', '2023-04-02 15:55:17', NULL),
-(7, '449024809', 'Food Prepared', 'Food being Prepared', '2023-04-02 15:55:41', NULL),
-(8, '449024809', 'Food Delivered', 'Food Delivered', '2023-04-02 15:56:07', NULL),
-(9, '393191723', '-', 'Order Confirmed', '2023-04-02 16:10:44', NULL),
-(10, '393191723', 'Sakit perut', 'Order Cancelled', '2023-04-02 16:11:40', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -125,22 +114,9 @@ CREATE TABLE `tblorderaddresses` (
   `ID` int(11) NOT NULL,
   `UserId` char(100) DEFAULT NULL,
   `Ordernumber` char(100) DEFAULT NULL,
-  `Flatnobuldngno` varchar(255) DEFAULT NULL,
-  `StreetName` varchar(255) DEFAULT NULL,
-  `Area` varchar(255) DEFAULT NULL,
-  `Landmark` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL,
   `OrderTime` timestamp NOT NULL DEFAULT current_timestamp(),
   `OrderFinalStatus` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tblorderaddresses`
---
-
-INSERT INTO `tblorderaddresses` (`ID`, `UserId`, `Ordernumber`, `Flatnobuldngno`, `StreetName`, `Area`, `Landmark`, `City`, `OrderTime`, `OrderFinalStatus`) VALUES
-(4, '4', '449024809', '103 jalan jentayu timur', 'negeri sembilan', 'enstek', 'landed', 'Nilai', '2023-04-02 15:54:26', 'Food Delivered'),
-(5, '4', '393191723', 'AU4', 'Kuala Lumpur', 'nilai', 'Landed', 'Selangor', '2023-04-02 16:09:52', 'Order Cancelled');
 
 -- --------------------------------------------------------
 
@@ -154,25 +130,27 @@ CREATE TABLE `tblorders` (
   `FoodId` char(10) DEFAULT NULL,
   `FoodQty` int(11) DEFAULT NULL,
   `IsOrderPlaced` int(11) DEFAULT NULL,
-  `OrderNumber` char(100) DEFAULT NULL
+  `OrderNumber` char(100) DEFAULT NULL,
+  `grandtotal` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `tblorders`
+-- Table structure for table `tblreview`
 --
 
-INSERT INTO `tblorders` (`ID`, `UserId`, `FoodId`, `FoodQty`, `IsOrderPlaced`, `OrderNumber`) VALUES
-(1, '1', '8', 1, 1, '409347008'),
-(2, '1', '7', 1, 1, '409347008'),
-(3, '3', '1', 1, 1, '111500378'),
-(4, '3', '5', 2, 1, '111500378'),
-(6, '4', '1', 1, 1, '364197876'),
-(7, '4', '17', 2, 1, '364197876'),
-(8, '4', '18', 1, 1, '364197876'),
-(9, '4', '1', 3, 1, '449024809'),
-(10, '4', '17', 3, 1, '449024809'),
-(11, '4', '18', 4, 1, '449024809'),
-(12, '4', '1', 1, 1, '393191723');
+CREATE TABLE `tblreview` (
+  `id` int(11) NOT NULL,
+  `review` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tblreview`
+--
+
+INSERT INTO `tblreview` (`id`, `review`) VALUES
+(2, 'My Delivery are not delivered in time but thankfully it still warm and delicious');
 
 -- --------------------------------------------------------
 
@@ -220,7 +198,28 @@ CREATE TABLE `tbluser` (
 INSERT INTO `tbluser` (`ID`, `FirstName`, `LastName`, `Email`, `MobileNumber`, `Password`, `RegDate`) VALUES
 (1, 'Anuj', 'Kumar', 'test@gmail.com', 1234567890, '5a105e8b9d40e1329780d62ea2265d8a', '2021-06-04 04:31:04'),
 (3, 'Test', 'User', 'testuser@gmail.com', 1236547890, 'f925916e2754e5e03f75dd58a5733251', '2021-06-05 12:28:41'),
-(4, 'Muhammad', 'Azril', 'muhdazriil0201@gmail.com', 199543382, '5eefcc50c97919f6610100b36414c993', '2023-04-02 10:12:52');
+(4, 'Muhammad', 'Azril', 'muhdazriil0201@gmail.com', 199543382, '5eefcc50c97919f6610100b36414c993', '2023-04-02 10:12:52'),
+(5, '', '', '', 0, 'd41d8cd98f00b204e9800998ecf8427e', '2023-05-01 18:28:03');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_contact`
+--
+
+CREATE TABLE `tbl_contact` (
+  `tbl_contact_id` int(11) NOT NULL,
+  `full_name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `message` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_contact`
+--
+
+INSERT INTO `tbl_contact` (`tbl_contact_id`, `full_name`, `email`, `message`) VALUES
+(4, 'Muhammad Azril ', 'muhdazriil0201@gmail.com', 'Good taste but small portion');
 
 --
 -- Indexes for dumped tables
@@ -266,6 +265,12 @@ ALTER TABLE `tblorders`
   ADD KEY `UserId` (`UserId`,`FoodId`,`OrderNumber`);
 
 --
+-- Indexes for table `tblreview`
+--
+ALTER TABLE `tblreview`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tblstaff`
 --
 ALTER TABLE `tblstaff`
@@ -276,6 +281,12 @@ ALTER TABLE `tblstaff`
 --
 ALTER TABLE `tbluser`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `tbl_contact`
+--
+ALTER TABLE `tbl_contact`
+  ADD PRIMARY KEY (`tbl_contact_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -303,19 +314,25 @@ ALTER TABLE `tblfood`
 -- AUTO_INCREMENT for table `tblfoodtracking`
 --
 ALTER TABLE `tblfoodtracking`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `tblorderaddresses`
 --
 ALTER TABLE `tblorderaddresses`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `tblorders`
 --
 ALTER TABLE `tblorders`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+--
+-- AUTO_INCREMENT for table `tblreview`
+--
+ALTER TABLE `tblreview`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tblstaff`
@@ -327,7 +344,13 @@ ALTER TABLE `tblstaff`
 -- AUTO_INCREMENT for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tbl_contact`
+--
+ALTER TABLE `tbl_contact`
+  MODIFY `tbl_contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
