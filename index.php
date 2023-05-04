@@ -33,6 +33,7 @@ if($query)
     <link rel="stylesheet" href="assets/css/red-color.css">
     <link rel="stylesheet" href="assets/css/yellow-color.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body itemscope>
 <?php include_once('includes/header.php');?>

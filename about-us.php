@@ -56,7 +56,7 @@ include_once('includes/dbconnection.php');
                                 <div class="sec-box">
                                 <div class="about-feat text-center wow fadeIn" data-wow-delay="0.2s">
                                     <h2 class="title3" itemprop="headline">Who are We?</h2>
-                                    <img src="assets/images/resource/about-img.jpg" alt="about-img.jpg" itemprop="image">
+                                    <img src="assets/images/about-us.png" alt="about-us.jpg" itemprop="image">
                                 </div>
                                
                              

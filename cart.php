@@ -8,16 +8,18 @@ include_once('includes/dbconnection.php');
 
 if(isset($_POST['placeorder'])){
 //getting address
-$fnaobno=$_POST['flatbldgnumber'];
-$street=$_POST['streename'];
-$area=$_POST['area'];
-$lndmark=$_POST['landmark'];
-$city=$_POST['city'];
 $userid=$_SESSION['fosuid'];
-//genrating order number
+echo '<script>alert("You will be redirected to Payment Details")</script>';
+echo "<script>window.location.href='checkout.php'</script>";
+}
+//pay later button
+if(isset($_POST['paylater'])){
+//getting address
+$userid=$_SESSION['fosuid'];
+//generating order number
 $orderno= mt_rand(100000000, 999999999);
 $query="update tblorders set OrderNumber='$orderno',IsOrderPlaced='1' where UserId='$userid' and IsOrderPlaced is null;";
-$query.="insert into tblorderaddresses(UserId,Ordernumber,Flatnobuldngno,StreetName,Area,Landmark,City) values('$userid','$orderno','$fnaobno','$street','$area','$lndmark','$city');";
+$query.="insert into tblorderaddresses(UserId,Ordernumber) values('$userid','$orderno');";
 
 $result = mysqli_multi_query($con, $query);
 if ($result) {
@@ -36,7 +38,8 @@ echo '<script>alert("Your order placed successfully. Order number is "+"'.$order
 echo "<script>window.location.href='my-account.php'</script>";
 
 }
-}   
+}
+
 
 //Code deletion
 if(isset($_GET['delid'])) {
@@ -141,6 +144,7 @@ while ($row=mysqli_fetch_array($query)) {
 </tr>
 
 <?php $grandtotal+=$total;}?>
+
 <thead>
 <tr>
     <th colspan="4" style="text-align:center;">Grand Total</th>
@@ -150,29 +154,12 @@ while ($row=mysqli_fetch_array($query)) {
 </thead>
 <form method="post">
 <tr>
-                                   
-<td colspan="3">
-<input type="text" name="flatbldgnumber"  placeholder="Flat or Building Number" class="form-control" required="true"></td>
-<td colspan="3">
-<input type="text" name="streename" placeholder="Street Name" class="form-control" required="true">      
-</td>
-</tr>
-<tr>
-<td colspan="3"> 
-<input type="text" name="area"  placeholder="Area" class="form-control" required="true">
-</td>
-<td colspan="3">
-<input type="text" name="landmark" placeholder="Landmark if any" class="form-control">
-</td>
-</tr>
-<tr>
-<td colspan="3"> 
-<input type="text" name="city" placeholder="City" class="form-control">  
-</td>
-</tr>
-<tr>
+
     <td colspan="3">
-       <button   type="submit" name="placeorder" class="btn theme-btn btn-lg">Place order</button>
+       <button   type="submit" name="placeorder" class="btn theme-btn btn-lg">Place Order</button>
+    <td colspan="3">
+       <button   type="submit" name="paylater" class="btn theme-btn btn-lg">Pay Later</button>
+   </td>
    </td></tr>
    </form>
 
@@ -210,4 +197,4 @@ include_once('includes/signup.php');
 </body>	
 
 </html>
-<?php } ?>
+<?php }?>

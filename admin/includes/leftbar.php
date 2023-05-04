@@ -3,7 +3,7 @@
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <img alt="image" class="rounded-circle" src="img/user.png"/>
+                        <img alt="image" class="rounded-circle" src="img/admin.png"/>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <?php
 $admid=$_SESSION['fosaid'];
@@ -77,10 +77,15 @@ $name=$row['AdminName'];
                        
                     </ul>
                 </li>
+
+                <li>
+                    <a href="review.php"><i class="fa fa-file"></i><span class="nav-label">Review</span><span class="fa arrow"></span></a>
+
+                </li>
+
                 <li>
                     <a href="search.php"><i class="fa fa-th-large"></i> <span class="nav-label">Search</span> <span class="fa arrow"></span></a>
-                                    </li>
-                                    <li>
+                </li>
                
             </ul>
 

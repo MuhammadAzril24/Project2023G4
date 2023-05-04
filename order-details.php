@@ -106,25 +106,6 @@ echo $status;
 <tr>
     <th colspan="4" style="text-align:center;color:blue; font-size:20px;">Delivery Address</th>
 </tr>
-<tr>
-<th>Flat No / Building No.:</th>
-<td><?php echo $row['Flatnobuldngno']?></td> 
-<th>Street Name:</th>
-<td> <?php echo $row['StreetName']?></td>    
-</tr>
-
-<tr>
-<th>Area :</th>
-<td><?php echo $row['Area']?></td> 
-<th>Landmark:</th>
-<td><?php echo $row['Landmark']?></td>    
-</tr>
-
-<tr>
-<th>City :</th>
-<td><?php echo $row['City']?></td> 
-   
-</tr>
 
 </table>
    <p style="font-weight:bold; font-size:18px;"><a href="javascript:void(0);" onClick="popUpWindow('invoice.php?oid=<?php echo htmlentities($row['Ordernumber']);?>');" title="Order Invoice" style="color:red">Invoice</a> |
@@ -165,8 +146,9 @@ while ($row=mysqli_fetch_array($query)) {
 <td><?php echo $ppu=$row['ItemPrice']?></td>
 <td><?php echo $total=$qty*$ppu;?></td>
 </tr>
-
-<?php $grandtotal+=$total;}?>
+<?php $total+=$grandtotal;}
+$query.="insert into tblorders(grandtotal) values('$grandtotal');";
+?>
 <thead>
 <tr>
     <th colspan="4" style="text-align:center;">Grand Total</th>

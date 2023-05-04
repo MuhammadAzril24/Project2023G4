@@ -23,7 +23,7 @@ if($query)
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <title>Food Ordering System</title>
+    <title>Meathos Restaurant</title>
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     
 
@@ -95,7 +95,7 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
     <input type="hidden" name="foodid" value="<?php echo $row['ID'];?>"> 
     <input class="qty" name="foodqty" type="text" value="1">
                                                </p>
-                                                <span class="price">Rs. <?php echo $row['ItemPrice'];?></span>
+                                                <span class="price">RM  <?php echo $row['ItemPrice'];?></span>
 
                                       <?php if($_SESSION['fosuid']==""){?>
   <a class="log-popup-btn btn  pull-right red-bg brd-rd3" href="#" title="Login" >Order Now</a>
